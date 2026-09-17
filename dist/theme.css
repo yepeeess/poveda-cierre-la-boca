@@ -10,3 +10,6 @@
 
 /* Herramientas neutras y visibles en modo claro */
 .light-theme .floating-tool{opacity:.28!important;filter:grayscale(1) contrast(1.28)!important}.light-theme .main:after{opacity:.26!important;filter:grayscale(1) contrast(1.24)!important}
+
+/* Contraste reforzado para modo claro */
+.light-theme{color:#101416!important}.light-theme .main{color:#101416!important}.light-theme h1,.light-theme h2,.light-theme h3,.light-theme b{color:#111517!important}.light-theme .sub,.light-theme .card p,.light-theme small{color:#3d464b!important}.light-theme .card{border-color:#b6bec2!important;box-shadow:0 12px 28px rgba(16,23,27,.12)!important}.light-theme .item{border-color:#c7cdd0!important}.light-theme .pill{border-color:#9da8ad!important}.light-theme .side,.light-theme .bottom{border-color:#aeb8bd!important}.light-theme .nav button:not(.active){color:#1d2529!important}.light-theme .nav button.active{background:#ffe0e3!important;color:#901321!important;border-color:#c91d2b!important}.light-theme .btn{box-shadow:0 7px 16px rgba(177,18,34,.22)!important}.light-theme .badge-body p{color:#454d51!important}.light-theme .badge-body code{color:#121719!important}.light-theme .mro-badge{border-color:#bb1523!important}
