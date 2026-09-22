@@ -53,6 +53,20 @@
   .theme-toggle{min-height:42px!important;border-radius:12px!important}
   button,a,input,select{touch-action:manipulation}
 }
+
+/* Navegación e iconografía de acceso rápido */
+.quick-actions .shortcut-icon{display:grid;place-items:center;width:42px;height:42px;margin:0 auto 2px;border-radius:14px;background:linear-gradient(135deg,#ef2937,#b90917);color:#fff;font-size:24px;line-height:1;box-shadow:0 8px 16px rgba(207,30,43,.25)}
+.quick-actions .card{align-items:center!important}
+@media(max-width:800px){
+  .quick-actions .card{gap:7px!important}
+  .quick-actions .shortcut-icon{width:40px;height:40px;border-radius:13px;font-size:22px}
+  .bottom button,.bottom .mobile-more{position:relative!important}
+  .bottom button.active:after{content:'';position:absolute;top:1px;width:22px;height:3px;border-radius:99px;background:#e5212e}
+  .bottom button.active b{color:#e5212e!important}
+  .bottom button b,.bottom .mobile-more b{height:25px;display:grid!important;place-items:center}
+  .bottom .mobile-more span{font-weight:700!important}
+}
+.light-theme .quick-actions .shortcut-icon{box-shadow:0 9px 18px rgba(207,30,43,.28)}
 @media (max-width:390px){
   .main{padding-left:11px!important;padding-right:11px!important}
   .people{grid-template-columns:1fr!important}
