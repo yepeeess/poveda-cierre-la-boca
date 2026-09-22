@@ -17,6 +17,11 @@
     option.onclick = () => { item.click(); panel.classList.remove('open'); };
     panel.appendChild(option);
   });
+  const more = document.createElement('button');
+  more.className = 'mobile-more';
+  more.innerHTML = '<b>•••</b><span>Más</span>';
+  document.querySelector('#bottom')?.appendChild(more);
+  more.onclick = () => panel.classList.toggle('open');
   toggle.onclick = () => panel.classList.toggle('open');
   close.onclick = () => panel.classList.remove('open');
 })();

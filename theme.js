@@ -7,6 +7,6 @@
     button.textContent = light ? '☾ Modo oscuro' : '☀ Modo claro';
     localStorage.mroLightTheme = light ? 'yes' : 'no';
   };
-  apply(localStorage.mroLightTheme === 'yes');
+  apply(localStorage.mroLightTheme ? localStorage.mroLightTheme === 'yes' : window.innerWidth <= 800);
   button.onclick = () => apply(!document.body.classList.contains('light-theme'));
 })();
