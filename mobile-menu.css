@@ -10,3 +10,8 @@
   .light-theme .mobile-options-panel{background:#fff}.light-theme .mobile-options-panel strong,.light-theme .mobile-options-panel button:not(.mobile-close){color:#202426}.light-theme .mobile-options-panel button:not(.mobile-close){background:#f6f7f8;border-color:#dde0e2}
 }
 @media(max-width:800px){.mobile-options{left:12px!important;right:auto!important}.theme-toggle{left:132px!important;right:auto!important;top:18px!important}.mobile-options-panel{left:0!important;right:auto!important;transform:translateX(-105%)}.mobile-options-panel.open{transform:translateX(0)}}
+
+/* La barra inferior prevalece sobre la cabecera compacta heredada. */
+@media(max-width:800px){
+  .bottom{display:flex!important;position:fixed!important;z-index:60!important;left:0!important;right:0!important;bottom:0!important;height:74px!important}
+}

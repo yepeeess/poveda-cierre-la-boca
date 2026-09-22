@@ -21,6 +21,9 @@
   more.className = 'mobile-more';
   more.innerHTML = '<b>•••</b><span>Más</span>';
   document.querySelector('#bottom')?.appendChild(more);
+  document.querySelectorAll('#bottom [data-nav]').forEach(button => {
+    button.onclick = () => window.go(button.dataset.nav);
+  });
   more.onclick = () => panel.classList.toggle('open');
   toggle.onclick = () => panel.classList.toggle('open');
   close.onclick = () => panel.classList.remove('open');
